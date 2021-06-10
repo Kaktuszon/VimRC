@@ -3,15 +3,21 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+set colorcolumn=80
+set signcolumn=yes
+
 syntax on
 
-colorscheme desert
+set nowrap
+set noswapfile
+set hidden
+set noerrorbells
 set nobackup
+set incsearch
+set scrolloff=8
 
-set mouse=a
-set ttymouse=xterm2
-
-autocmd vimenter * NERDTree
+" colorscheme desert
+set nobackup
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
@@ -20,11 +26,4 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
-execute pathogen#infect()
-
-
-"Windows GVim only
-set guioptions-=m "remove menu bar
-set guioptions-=T "remove toolbar
-set guioptions-=r "remove right-hand scroll bar
-set guioptions-=L "remove left-hand scroll bar
+set whichwrap+=<,>,[,]
