@@ -4,7 +4,6 @@ set softtabstop=4
 set shiftwidth=4
 
 set colorcolumn=80
-set signcolumn=yes
 
 syntax on
 
