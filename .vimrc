@@ -6,6 +6,7 @@ set shiftwidth=4
 "set colorcolumn=80
 
 syntax on
+filetype plugin indent on
 
 set nowrap
 set noswapfile
@@ -60,3 +61,8 @@ vnoremap <C-c> "+y
 nnoremap <C-v> "+p
 inoremap <C-v> <Esc>"+p
 vnoremap <C-v> "+p
+
+" Select all text
+nnoremap <C-a> <Esc>ggVG
+inoremap <C-a> <Esc>ggVG
+vnoremap <C-a> <Esc>ggVG
