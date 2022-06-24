@@ -15,6 +15,7 @@ set noerrorbells
 set nobackup
 set incsearch
 set scrolloff=8
+set cursorline
 
 set clipboard+=unnamedplus
 
