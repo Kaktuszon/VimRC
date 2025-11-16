@@ -21,7 +21,7 @@ set scrolloff=8
 set cursorline
 " hi CursorLine cterm=NONE ctermbg=242
 
-set clipboard+=unnamedplus
+set clipboard=unnamedplus,unnamed
 
 " Set colorscheme
 colorscheme everforest
